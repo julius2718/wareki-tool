@@ -115,6 +115,10 @@ func convert_wyear(era_year [2]string) int {
 		year_int = wyear_int + 1988
 	} else if era_str == "昭和" {
 		year_int = wyear_int + 1925
+	} else if era_str == "大正" {
+		year_int = wyear_int + 1911
+	} else if era_str == "明治" {
+		year_int = wyear_int + 1867
 	} else {
 		panic("元号が正しくありません。")
 	}
